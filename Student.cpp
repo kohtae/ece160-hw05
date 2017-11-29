@@ -13,8 +13,7 @@ Student::~Student() {}
 
 
 
-float Student::getGpa()
-{
+float Student::getGpa() {
 
   float gpa = 0;
   
@@ -23,10 +22,12 @@ float Student::getGpa()
     gpa = gpa + _grades[i];
   }
   
-  if(gpa!=0) {
+  if(gpa != 0) {
     gpa = gpa/_grades.size();
   }
   return gpa;
+  
+  
 }
 
 
@@ -51,10 +52,10 @@ void Student::printInfo()  {
     major = "EE";
     break;
     case Major::CE:
-    major = "CE";
+    major ="CE";
     break;  
     case Major::CHE:
-    major = "CHE";
+    major ="CHE";
     break;  
     case Major::BSE:
     major = "BSE";
